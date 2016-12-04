@@ -60,7 +60,7 @@ TEST_F(TaxiCenterTest, observerTest) {
     taxiCenter.registerObserver(observer);
     postObserverNum = (int) taxiCenter.getObservers().size();
 
-    //ASSERT_EQ(initObserverNum + 1, postObserverNum); //check that adding an observer works
+    ASSERT_EQ(initObserverNum + 1, postObserverNum); //check that adding an observer works
 
     taxiCenter.unregisterObserver(observer);
 
@@ -68,5 +68,5 @@ TEST_F(TaxiCenterTest, observerTest) {
 
     postObserverNum = (int) taxiCenter.getObservers().size();
 
-    //ASSERT_EQ(initObserverNum, postObserverNum); //check that removing an observer works
+    ASSERT_EQ(initObserverNum, postObserverNum); //check that removing an observer works
 }

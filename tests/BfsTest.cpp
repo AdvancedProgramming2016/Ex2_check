@@ -36,10 +36,8 @@ TEST_F(BfsTest, basicTests){
     // Builds the shortest path
     bfs.get_route();
 
-    // TODO: Check if necessary to check
-    testing::internal::CaptureStdout();
-    std::cout << "(0, 0)\n(0, 1)\n(1, 1)";
-    std::string output = testing::internal::GetCapturedStdout();
-    //EXPECT_TRUE(bfs.print_points() == output); TODO fix that check
+    std::ostringstream  out;
+    out<<   startPt;
+    EXPECT_EQ(out.str(), "(0,0)"); //TODO check that it works
 
 }

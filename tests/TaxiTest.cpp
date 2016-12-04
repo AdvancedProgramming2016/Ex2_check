@@ -37,8 +37,8 @@ TEST_F(TaxiTest, basicTest) {
     taxi.endTrip();
     newSatisfaction = taxi.getDriver()->getAvgSatisfaction();
 
-    //ASSERT_EQ(taxi.getTrip(), 0);                 //check that the trip was set to NULL
-    //EXPECT_NE(initSatisfaction, newSatisfaction); //check that the average satisfaction was changed, not mandatory
+    ASSERT_TRUE(taxi.getTrip() == 0);                 //check that the trip was set to NULL
+    EXPECT_NE(initSatisfaction, newSatisfaction); //check that the average satisfaction was changed, not mandatory
 
 }
 
