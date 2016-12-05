@@ -5,8 +5,24 @@
 #ifndef EX2_VEHICLE_H
 #define EX2_VEHICLE_H
 
-#include "Manufacturer.h"
-#include "Color.h"
+
+enum Color{
+    RED,
+    BLUE,
+    GREEN,
+    PINK,
+    WHITE
+};
+
+/**
+ * This enum represents the car manufacurer.
+ */
+enum Manufacturer{
+    HONDA,
+    SUBARU,
+    TESLA,
+    FIAT
+};
 
 /**
  * The class represents an abstract vehicle.

@@ -3,9 +3,18 @@
 #define EX2_DRIVER_H
 
 #include <unwind.h>
-#include "MaritalStatus.h"
 #include "Taxi.h"
 #include "IObserver.h"
+
+/**
+ * This enum represents the marital status a driver has.
+ */
+enum MaritalStatus{
+    SINGLE,
+    MARRIED,
+    DIVORCED,
+    WIDOWED
+};
 
 /**
  * The class represents a driver of a taxi vehicle.
@@ -80,7 +89,7 @@ public:
     /*
      * Send update about the driver.
      */
-    virtual void update(ISubject *subject) override;
+    virtual void update(ISubject *subject);
 };
 
 

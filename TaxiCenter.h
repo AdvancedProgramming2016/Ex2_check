@@ -78,11 +78,11 @@ public:
      */
     std::vector<Taxi *> &getTaxis();
 
-    virtual void registerObserver(IObserver *observer) override;
+    virtual void registerObserver(IObserver *observer);
 
-    virtual void unregisterObserver(IObserver *observer) override;
+    virtual void unregisterObserver(IObserver *observer);
 
-    virtual void notifyObserver() override;
+    virtual void notifyObserver();
 
     void printDriverLocation(const Driver &driver);
 

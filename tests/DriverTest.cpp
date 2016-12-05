@@ -3,7 +3,9 @@
 #include "../TaxiCenter.h"
 #include "../StandardVehicle.h"
 
+
 class DriverTest : public ::testing::Test {
+
 protected:
     Driver     driver;
     Taxi       taxi;
@@ -15,7 +17,7 @@ protected:
     virtual void SetUp() {
 
         point = new Point(0,0);
-        vehicle = new StandardVehicle(1, Manufacturer::HONDA, Color::BLUE, 4, 2, 90);
+        vehicle = new StandardVehicle(1, HONDA, BLUE, 4, 2, 90);
         trip    = new Trip(1, 2, 4, &taxi, taxi.getCurrentPosition(), Point(2, 3));
         taxi.setTrip(trip);
     }
@@ -28,7 +30,7 @@ protected:
     }
 
 public:
-    DriverTest() : driver(1, 45, MaritalStatus::MARRIED, 20), taxiCenter(point),
+    DriverTest() : driver(1, 45, MARRIED, 20), taxiCenter(point),
                    taxi(&driver, vehicle, Point(1, 2)) {}
 };
 

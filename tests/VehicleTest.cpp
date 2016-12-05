@@ -10,8 +10,8 @@ protected:
 
     virtual void SetUp() {
 
-        standardVehicle = new StandardVehicle(1,Manufacturer::FIAT, Color::BLUE, 4, 2, 90);
-        luxuryVehicle   = new LuxuryVehicle(2, Manufacturer::TESLA, Color::WHITE, 3, 5, 200);
+        standardVehicle = new StandardVehicle(1,FIAT, BLUE, 4, 2, 90);
+        luxuryVehicle   = new LuxuryVehicle(2, TESLA, WHITE, 3, 5, 200);
     }
 
     virtual void TearDown() {

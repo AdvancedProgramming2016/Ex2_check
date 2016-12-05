@@ -11,8 +11,8 @@ protected:
 
     virtual void SetUp() {
 
-        driver  = new Driver(1, 45, MaritalStatus::MARRIED, 20);
-        vehicle = new StandardVehicle(1, Manufacturer::HONDA, Color::BLUE, 4, 2, 90);
+        driver  = new Driver(1, 45, MARRIED, 20);
+        vehicle = new StandardVehicle(1, HONDA, BLUE, 4, 2, 90);
         trip    = new Trip(1, 2, 4, &taxi, taxi.getCurrentPosition(), Point(2, 3));
         taxi.setTrip(trip);
     }

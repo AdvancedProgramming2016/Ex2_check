@@ -14,8 +14,8 @@ protected:
 
     virtual void SetUp() {
 
-        driver  = new Driver(2, 40, MaritalStatus::SINGLE, 20);
-        vehicle = new StandardVehicle(1, Manufacturer::SUBARU, Color::BLUE, 4, 2, 95);
+        driver  = new Driver(2, 40, SINGLE, 20);
+        vehicle = new StandardVehicle(1, SUBARU, BLUE, 4, 2, 95);
         taxi    = new Taxi(driver, vehicle, Point(0, 1));
     }
 
