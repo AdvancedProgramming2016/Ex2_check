@@ -15,7 +15,7 @@ MainFlow::~MainFlow() {
 
 }
 
-void MainFlow::createMap(unsigned height, unsigned width, std::vector<Point> obstacles) {
+void MainFlow::createMap(unsigned height, unsigned width) {
 
 }
 

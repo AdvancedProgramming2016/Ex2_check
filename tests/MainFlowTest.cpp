@@ -11,7 +11,8 @@ protected:
     Vehicle  *vehicle;
 
     virtual void SetUp() {
-        mainFlow.createMap(5, 5, std::vector<Point> {Point(3, 3)});
+
+        mainFlow.createMap(5, 5);
         mainFlow.createTaxiCenter(Point(0, 0));
         driver  = new Driver(1, 23, SINGLE, 3);
         vehicle = new StandardVehicle(1, FIAT, BLUE, 4, 2, 90);

@@ -28,7 +28,7 @@ public:
     /*
      * Creates a map with obstacles.
      */
-    void createMap(unsigned height, unsigned width, std::vector<Point> obstacles);
+    void createMap(unsigned height, unsigned width);
 
     /*
      * Creates a taxi center.
