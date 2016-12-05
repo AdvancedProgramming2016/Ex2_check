@@ -44,7 +44,7 @@ public:
      */
     virtual ~TaxiCenter();
 
-    Trip* answerCall(std::vector<Passenger *> passengers);
+    Trip* answerCall();
 
     const std::vector<IObserver> &getObservers() const;
 

@@ -33,7 +33,7 @@ void TaxiCenter::addVehicle(Vehicle *vehicle) {
     vehicles.push_back(vehicle);
 }
 
-Trip* TaxiCenter::answerCall(std::vector<Passenger *> passengers) {
+Trip* TaxiCenter::answerCall() {
 
 }
 
